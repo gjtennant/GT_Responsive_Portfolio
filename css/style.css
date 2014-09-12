@@ -424,8 +424,6 @@ h6 {
    background: #333;
 }
 
-}
-
 .box {
 	padding: 14px;
 }
@@ -626,12 +624,18 @@ textarea {
 
 /* * * * * * * * * * * * * * * * * * * * * 
 
-	Media Queries for screen less than 45em (or 720px)
+	Media Queries for screen less than 47em (or 752px)
 
 * * * * * * * * * * * * * * * * * * * * */
 
 
-@media screen and (max-width: 45em){
+@media screen and (max-width: 47em){
+
+	body {
+	   font-size: 107.692307692308%;
+	   /* That's from a baseline assumption of 16px, turning it into 17px */
+	}
+
 	#container-header {
 		background: rgb(170,103,38) url("../img/jbowers-top-750.jpg") no-repeat top center;
 		padding: 5% 0;
@@ -642,6 +646,7 @@ textarea {
 
 	#portfolio figure {
 		margin:auto;
+		max-width: 25em;
 	}
 
 	#portfolio img {
@@ -667,16 +672,19 @@ textarea {
 
 /* * * * * * * * * * * * * * * * * * * * * 
 
-	Media Queries for screen wider than 45em (or 720px)
+	Media Queries for screen wider than 47em (or 752px)
 
 * * * * * * * * * * * * * * * * * * * * */
 
 
-@media screen and (min-width: 45em){
+@media screen and (min-width: 47em){
 
-	body {
-	   font-size: 107.692307692308%;
-	   /* That's from a baseline assumption of 16px, turning it into 17px (...right?) */
+	#portfolio h4 {
+		font-size: 0.975em;
+	}
+
+	#portfolio h6 {
+		font-size: .75em;
 	}
 
 	#container-header {
@@ -743,6 +751,9 @@ textarea {
    	margin: 0 5.5%;
    }
 
+/*
+	Items currently turnd off
+
    .name, .email {
 	   float: left;
 	   width: 50%;
@@ -758,7 +769,8 @@ textarea {
 	.email {
 	   padding-left: .65em;
 	}
-	    
+*/
+
 	.send,
 	.back {
 	   width: 10em;
@@ -769,12 +781,22 @@ textarea {
 
 /* * * * * * * * * * * * * * * * * * * * * 
 
-	Media Queries for screen wider than 60em (960px)
+	Media Queries for screen wider than 69.375em (1110px)
 
 * * * * * * * * * * * * * * * * * * * * */
 
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 69.375em) {
+
+	#portfolio h4 {
+		font-size: 1em;
+	}
+
+	#portfolio h6 {
+		font-size: .85em;
+	}
+/* 
+	For the form that's currently turned off
 
 	.name, .email {
 	   padding-right: 1.3em;
@@ -785,9 +807,9 @@ textarea {
 	.message textarea {
 	   width: 50%;
 	}
-	    
+*/	    
 	/* Form Fixes, IE7 and below */
-
+/*
 	.ie .message textarea {
 		*width: 49.9%;
 	}
@@ -795,6 +817,7 @@ textarea {
 	.ie .send {
 		*margin-left: 46.7%;
 	}
+*/
 }
 
 
