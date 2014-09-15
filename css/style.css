@@ -1,8 +1,3 @@
-/* 
-(Search for and replace absolute-path instances)
-*/
-
-
 /* * * * * * * * * * * * * * * * * * * * * 
 
 	Tag Resets
@@ -612,7 +607,7 @@ textarea {
 
 
 .ie .wrapper {
-    *behavior: url("http://absolute-path.com/js/boxsizing.htc");
+    *behavior: url("http://www.gregtennant.com/js/boxsizing.htc");
 }
 
 /* Clearfix */
@@ -935,5 +930,5 @@ textarea {
 .ie .email,
 .ie input,
 .ie textarea {
-	*behavior: url("http://www.absolute-path.com/js/boxsizing.htc");
+	*behavior: url("http://www.gregtennant.com/js/boxsizing.htc");
 }
