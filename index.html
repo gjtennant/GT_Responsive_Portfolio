@@ -1,16 +1,18 @@
 <!DOCTYPE HTML> 
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if !IE]><html><![endif]-->
-<html>
+<html lang='en'>
 <head>
 	<meta charset='UTF-8'>
 	<title>GT Web Developer</title>
+	<meta name='ROBOTS' content='INDEX,FOLLOW'>
 	<meta name='author' content='Greg Tennant'>
 	<meta name='description' content='Web Developer Portfolio and Resume'>
 	<meta name='keywords' content='Developer, Web Developer, Full Stack, Front End, Backend, Responsive, Design, Wireframes, HTML, HTML5, CSS, CSS3, jQuery, JavaScript, Ruby, Rails, PHP, CodeIgniter, OOP, MVC, Frameworks, MySQL, SQLite3, GitHub, Git, Version Control, Photoshop, Web Video, Video'>
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="shortcut icon" href="http://faviconist.com/icons/bba68de09aba66526eea57b2569363c3/favicon.ico" />
+
 	<!-- Viewport meta tag to prevent iPhone from zooming down our page -->
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
@@ -45,26 +47,26 @@
 	<![endif]-->
 
 </head>
-<body lang='en'>
+<body>
 	<div id='container-nav'>
 		<section id='nav' class='group wrapper'>
 			<!-- Checkbox Hack markup -->
 			<input type="checkbox" id="toggle" />
 			<label for="toggle" onclick>Menu</label>
-			<!-- /Checkbox Hack markup -->
+			<!-- end Checkbox Hack markup -->
 			<nav>
 				<ul>
 					<li>
 						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a href="#resume">Resume</a>
+						<a href="./res-web.html">Resume</a>
 					</li>
 					<li>
 						<a href="http://www.linkedin.com/pub/greg-tennant/6/b44/124" target="_blank">LinkedIn Profile</a>
 					</li>
 					<li>
-						<a href="https://github.com/gjtennant" target="_blank">GitHub Account</a>
+						<a href="https://github.com/gjtennant?tab=repositories" target="_blank">GitHub Account</a>
 					</li>
 					<li><a href="#colophon">Contact</a></li>
 				</ul>
@@ -85,7 +87,7 @@
 			</figure> 
 
 			<h1>Greg Tennant</h1>
-			<h2>Santa Cruz based full-stack Web Developer and Video Producer/Director</h2>
+			<h2>Santa Cruz based full-stack Web Developer</h2>
 		</header>
 	</div>
 	
@@ -99,39 +101,46 @@
 					<h3>Portfolio</h3>
 					<p>Some of the things I've been working on lately</p>
 				</header>
+				<article id='ArgBld' class='group wrapper'>
+					<h4>Argument Builder</h4>
+					<h6>Ruby on Rails, Sqlite3 Back End, Admin Panel</h6>
+					<figure>
+						<a href="./admin-video.html" title='See a demo video'><img src="./img/ArgBldAdminPanel-400.png" alt="Screenshot Argument Builder Admin Panel"></a>
+					</figure>
+				</article>
+				<article id='PiW' class='group wrapper'>
+					<h4>Pictures Into Words</h4>
+					<h6>PHP Codeigniter, MySQL Back End, Admin Panel</h6>
+					<figure>
+						<a href="./code-PiW.html" title='See a code sample'><img src="./img/PiW-PHP-400.png" alt="Pictures Into Words PHP screenshot"></a>
+					</figure>
+				</article>
+				<article id='PiW' class='group wrapper'>
+					<h4>Pictures Into Words 2</h4>
+					<h6>Ruby on Rails, Sqlite3 Back End, Admin Panel</h6>
+					<figure>
+						<a href="https://github.com/gjtennant/PicturesIntoWords2" target='_blank' title='See the code on GitHub'><img src="./img/PiW2-400.png" alt="Pictures Into Words 2 screenshot"></a>
+					</figure>
+				</article>
 				<article class='group wrapper'>
 					<h4>Santa Cruz Montessori</h4>
 					<h6>Project Management</h6>
 					<figure>
-						<a href="http://www.scms.org/" target='_blank'><img src="./img/SCM-400.png" alt="www.scms.org"></a>
+						<a href="http://www.scms.org/" target='_blank' title='Go to SCM site'><img src="./img/SCM-400.png" alt="www.scms.org"></a>
 					</figure>
 				</article>
 				<article class='group wrapper'>
 					<h4>Stuart Goldberg, DDS</h4>
 					<h6>Web Video</h6>
 					<figure>
-						<a href="http://www.stuartgoldbergdds.com/" target='_blank'><img src="./img/DDS-400.png" alt="www.stuartgoldbergdds.com"></a>
-					</figure>
-				</article>
-				<article id='ArgBld' class='group wrapper'>
-					<h4>Argument Builder</h4>
-					<h6>Ruby on Rails</h6>
-					<figure>
-						<a href="./code-ArgBld.html"><img src="./img/ArgBld-MW-400.png" alt="screenshot Argument Builder"></a>
-					</figure>
-				</article>
-				<article id='PiW' class='group wrapper'>
-					<h4>Pictures Into Words</h4>
-					<h6>PHP Codeigniter, MySQL</h6>
-					<figure>
-						<a href="./code-PiW.html"><img src="./img/PiW-PHP-400.png" alt="screenshot Pictures Into Words"></a>
+						<a href="http://www.stuartgoldbergdds.com/" target='_blank' title="Go to Stuart Goldberg's site"><img src="./img/DDS-400.png" alt="www.stuartgoldbergdds.com"></a>
 					</figure>
 				</article>
 				<article class='group wrapper'>
 					<h4>Portfolio</h4>
 					<h6>Responsive Design, Hand-Coded From Scratch</h6>
 					<figure>
-						<a href="https://github.com/gjtennant/GT_Responsive_Portfolio/blob/master/index.html" target='_blank'><img src="./img/GT-Responsive-400.png" alt="This portfolio site!"></a>
+						<a href="https://github.com/gjtennant/GT_Responsive_Portfolio/blob/master/index.html" target='_blank' title='See the code on GitHub'><img src="./img/GT-Responsive-400.png" alt="This portfolio site!"></a>
 					</figure>
 				</article>
 			</section>
@@ -139,30 +148,34 @@
 			<section id='resume' class='group'>
 				<header class='wrapper'>
 					<h3>Resume</h3>
-					<p>Current/previous positions and skill set</p>
 				</header>
 				<article class='wrapper'>
 					<div class='box'>
-						<h4>Currently</h4>
+						<h4>Current</h4>
 
 						<h5>Full-Stack Web Developer</h5>
 						<h6>Educanus</h6>
 						<ul>
-							<li>Building online teaching tools for advocates and students, using PHP CodeIgniter and Ruby on Rails</li>
+							<li>Building online teaching tools for advocates and students, using Ruby on Rails and PHP CodeIgniter</li>
 							<li>Black Belt certification from the Coding Dojo in Mountain View, CA</li>
+							<a href="./res-web.html">
+								<li><small><em>Full Resume</em></small></li>
+							</a>
 						</ul>
 					</div>
 				</article>
 				<article class='wrapper'>
 					<div class='box'>
-						<h4>Previously</h4>
+						<h4>Previous</h4>
 
 						<h5>Video Producer, Director, Editor</h5>
 						<h6>Freelance</h6>
 						<ul>
-							<li>Long history in independent film and corporate video as producer, writer, director, editor, 1st assistant director, key grip, gaffer, etc.</li>
-							<li>Independent feature film on Netflix</li>
+							<li>Corporate video, market research, independent film as producer, writer, director, editor</li>
 							<li>Degree in film production from USC School of Cinematic Arts</li>
+							<a href="./video.html">
+								<li><small><em>Film & Video Portfolio</em></small></li>
+							</a>
 						</ul>
 					</div>
 				</article>
@@ -192,28 +205,7 @@
 		<footer id='colophon' class='wrapper'>
 
 			<a href="mailto:gjtennant@sbcglobal.net?subject=Saw your portfolio..."><button class='send'>Email me</button></a>
-<!--
-			<form id='contact' enctype='text/plain'>
-			    <fieldset class="wrapper">
-			        <legend>Contact</legend>
-			            <ul class="group">
-			                <li class="name">
-			                    <label for="name">Your Name</label>
-			                    <input type="text" id="name" name="name" />
-			                </li>
-			                <li class="email">
-			                    <label for="email">Your Email</label>
-			                    <input type="email" id="email" name="email" />
-			                </li>
-			                <li class="message">
-			                    <label for="message">Say Hello</label>
-			                    <textarea id="message" name="message"></textarea>
-			                </li>
-			            </ul>
-			        <input class="send" type="submit" name="submit" value="Send" />
-			    </fieldset>
-			</form>
--->
+
 		</footer>
 	</div>
 </body>
